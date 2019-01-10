@@ -1,0 +1,161 @@
+html,body{
+    height:100%;
+}
+body{
+	font-family:sans-serif;font-size:10px;
+	margin:0px;
+	padding:0px;
+	font-family: 'Gafata', sans-serif;
+
+}
+#tituloprint{display:none;}
+.dia{
+	width:14%;
+	height:100px;
+	border-top:1px solid rgb(200,200,200);
+	float:left;
+	background:rgba(255,255,255,0.2);
+}
+.desactivado{
+	background:rgba(0,0,0,0.3);
+}
+.numerodia{
+	width:100%;
+	background:rgba(150,150,150,0.2);
+	font-weight:bold;
+}
+#calendario{
+	border:0px solid grey;
+	margin:15px;
+}
+#nuevoevento{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0);
+	top:0px;left:0px;
+	border:5px solid white;
+}
+#contieneform{
+	border-radius:10px;
+	width:40%;
+	height:50%;
+	margin:auto;
+	background:rgba(255,255,255,0.6);
+	box-shadow:0px 10px 15px rgba(0,0,0,0.3);
+	margin-top:20px;
+	padding:20px;
+	border:5px solid white;
+}
+.evento{
+	padding:2px;
+	margin-top:2px;
+	margin-right:2px;
+	border-radius:3px;
+}
+.eliminar{
+	overflow:hidden;
+	float:right;
+	background:rgba(255,255,255,0.8);
+	border-radius:30px;
+	width:14px;
+	height:14px;
+	text-align:center;
+	opacity:0;
+	transition:all 1s;
+}
+.eliminar a{
+	position:relative;
+	top:-9px;
+	left:-3px;
+	text-decoration:none;
+	font-weight:bold;
+	font-family:arial;
+	font-size:30px;
+}
+.eliminar:hover{
+	opacity:1;
+}
+.difuminado{-webkit-filter: blur(7px);}
+.calendariocol{
+	padding:4px;margin:1px;border-radius:3px;width:50px;float:right;font-size:12px;
+}
+#calendarios{float:left;}
+#anonimo{}
+.gris{background:grey !important;}
+h1,h2{margin:0px;padding:0px;}
+h1{font-size:32px}
+h2{font-size:12px;}
+#aniotitulo{text-align:center;color:black;}
+#aniotitulo h1,#aniotitulo h2{color:black;text-align:center;padding:0px;margin:0px;}
+#tablanuevoevento tr td{
+	border-bottom:1px solid rgb(220,220,220);
+	padding:4px;
+	margin:4px;
+}
+#nuevoevento h3{
+	font-size:32px;
+	margin:0px;
+	padding:0px;
+}
+#tablanuevoevento [type=text]{
+	border:0px solid white;
+	border-radius:4px;
+	box-shadow:0px 5px 5px rgba(0,0,0,0.3) inset;
+	padding:4px;
+}
+#cerrarnuevoevento, #cerrarnuevocalendario{
+	width:20px;
+	height:20px;
+	border-radius:20px;
+	background:black;
+	float:right;
+	color:white;
+	text-align:center;
+	align-content: center;
+}
+.diadelasemana{
+	width:14%;
+	height:100%;
+	border:1px solid grey;
+	border-radius:4px;
+	float:left;
+}
+.horadeldia{
+	width:100%;
+	height:4%;
+	border-bottom:1px dashed grey;
+	font-size:8px;
+	color:grey;
+}
+.titulodia{
+	width:100%;
+	height:2%;
+	background:grey;
+}
+#aniotitulo h1{
+	font-size:48px;
+}
+#aniotitulo h2{
+	font-size:24px;
+}
+@media print
+  {
+  body{background:white !important;}
+  header,#botones button,#calendarios{display:none !important;}
+  h1,h2{text-align:left !important;margin:auto !important;display:block !important;padding:0px !important;margin:0px !important;width:100px !important;}
+  #aniotitulo{text-align:center !important;}
+  #tituloprint{display:none !important;}
+  #aniotitulo{display:none;}
+  }
+  nav ul li a{color:inherit;text-decoration:none;}
+.cierracalendarioX{
+	color:white;
+	background:black;
+	width:20px;
+	height:15px;
+	text-decoration:none;
+	border-radius:20px;
+	padding:4px;
+	opacity:0.4;
+}
